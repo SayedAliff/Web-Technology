@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>E-Pharmacy admin reg
+    </title>
+    <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
+</head>
 <body>
     <br>
     <br>

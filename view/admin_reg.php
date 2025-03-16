@@ -3,6 +3,7 @@
 <head>
     <title>E-Pharmacy admin reg
     </title>
+    <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
 </head>
 
 <body>
@@ -11,18 +12,21 @@
   <h2> Admin Registration </h2>
 
     <form action="action.php" method="post">
-  <table>
+        <table>
   <h4> Personal Informations  </h4>
     <tr>
         <td>Full Name: </td><td> <input type="text" name="Full Name "></td>
         <tr>
              <td>Date of birth: </td> <td><input type="date" id="birthday" name="birthday"></td>
         <tr>
-        <td>Select a gender:</td>
-            <td><input type="radio" id="gender1" name="gender" value="male">Male</td>
-            <td><input type="radio" id="gender2" name="gender" value="female">Female</td>
-            <td><input type="radio" id="gender3" name="gender" value="Other">Other</td>
-        <tr>
+        <td>Select a gender: </td> 
+        <td>
+            <input type="radio" id="gender1" name="gender" value="male">Male
+            <input type="radio" id="gender2" name="gender" value="female">Female
+            <input type="radio" id="gender3" name="gender" value="Other">Other
+            </td>
+           
+         <tr>
          <td> Phone Number: </td><td> <input type="tel" id="phone" name="phone" placeholder="+880-1* **** **** " > </td>
 
          <tr>
@@ -50,10 +54,11 @@
 
     <tr>
 
-     <td><input type="button" onclick="alert('If you agree to follow prescription policies, payment terms, privacy rules, and legal guidelines then press Submit !!!!')" value="Terms and Conditions"></td> 
-    <tr>
+     </tr>
         <td> <input type="reset" name="reset" value="Reset" >
      <input type="submit" name="submit" value="Submit" ></td>
+     <tr>
+     <td><a href="http://localhost/springwt/view/home.php">Go to home page </a></td>
     </tr>
    </table>
   </form>

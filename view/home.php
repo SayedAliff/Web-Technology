@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>E-Pharmacy
-    </title>
+    <title>E-Pharmacy</title>
+    <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
 </head>
 
 <body>
