@@ -2,16 +2,17 @@
 <html>
 <head>
     <title>E-Pharmacy admin reg</title>
+    <link rel="stylesheet" type="text/css" href="../css/alif-style.css">
     <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
 </head>
 <body>
        <h1> E-Pharmacy </h1>
-       <hr>
+       <hr>     
        <h2> Admin Registration </h2>
 
  <form action="action.php" method="post">
-   <table>
-       <h4> Personal Informations  </h4>
+   <table align="center">
+    <td><h4> Personal Informations  </h4></td>   
     <tr>
         <td>Full Name: </td>
         <td> <input type="text" name="Full Name "></td>
@@ -44,9 +45,11 @@
         <td> Upload Your Image: </td>
         <td> <input type="file" name="images" ></td>
     </tr>
+    
     <tr> 
         <td><h4> Education  </h4></td>
     </tr>
+    
     <tr>
         <td>Degree: </td>
         <td> <input type="text" name="degree "></td>
@@ -60,8 +63,12 @@
         <td>Passing year: </td>
         <td> <input type="text" name="year "></td>  
     </tr>
+   
     <tr>
-        <td><h5>Skills</h5></td>
+        <td><h4>Skills</h4></td>
+    </tr>
+
+    <tr>
         <td>
             <input type="checkbox" id="check1" name="check1" value="Inventory Management">Inventory
             <input type="checkbox" id="check2" name="check2" value="Customer Service">Customer Support
@@ -71,12 +78,12 @@
     </tr>
 
     <tr>
-        <td> <input type="reset" name="reset" value="Reset" >
-            <input type="submit" name="submit" value="Submit" >
+        <td> <input type="reset" class="btn reset" value="Reset" >
+             <input type="submit" class="btn submit" name="submit" value="Submit" >
         </td>
     </tr>
     <tr>
-        <td><a href="http://localhost/springwt/view/home.php">Go to home page </a></td>
+        <td><a href="http://localhost/springwt/view/home.php" class="link">Go to home page </a></td>
     </tr>
    </table>
   </form>

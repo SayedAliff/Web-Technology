@@ -1,0 +1,64 @@
+/* ID selector */
+#id {
+    text-align: center;
+    color: red;
+   }
+  
+  /* Class selector */
+ 
+.btn {
+    width: 80px;
+    margin: 8px;
+    padding: 10px;
+    border: 3px solid black; 
+    border-radius: 8px;}
+  
+.submit {
+    background-color: green;
+    color: white;
+        }
+  
+.reset {
+    background-color: red;
+    color: white;
+       } 
+  
+.link {
+    padding: 1px;
+    background-color: lightskyblue;
+    color: blue;
+    margin: 5px;
+    border-radius: 8px;   
+    }
+  
+  /* Universel selector */
+* {
+    background-color: lightblue;
+    font-family: 'Times New Roman';
+    text-align: center;
+    box-sizing: border-box;
+    color: black;
+  }
+  
+  /*Element selector */
+h4, p {
+    background-color: gold;
+    border: 1px solid gray;
+     }
+  
+
+h1 {
+    background-color: gold;
+    color: blue;
+   }
+
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 10px solid green;
+    position: center;
+    padding: 30px;
+    margin: 2px;
+    display: inline-block;
+  }
+  
