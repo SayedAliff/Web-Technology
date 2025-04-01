@@ -8,8 +8,8 @@
 <body>
       <h1> E-Pharmacy </h1>
       <hr>
-  <form>
-   <table align="center">
+  <form> 
+  <table align="center">
     <tr>
       <td>Username:</td> 
       <td><input type="text" name="username"></td>
@@ -21,6 +21,9 @@
     </tr>
     <tr>
       <td><a href="http://localhost/springwt/view/admin_reg.php" class="link">Click for the AdminRegistration </a></td>
+    </tr>
+    <tr> 
+      <td><a href="http://localhost/springwt/view/user_reg.php" class="link">Click for the AdminRegistration </a></td>
     </tr>
    </table>
   </form>
