@@ -85,6 +85,9 @@
     <tr>
         <td><a href="http://localhost/springwt/view/home.php" class="link">Go to home page </a></td>
     </tr>
+    <tr>
+        <td><a href="http://localhost/springwt/view/home.php" class="link">Go to home page </a></td>
+    </tr>
    </table>
   </form>
  </body>
