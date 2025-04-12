@@ -1,10 +1,9 @@
-/* ID selector */
+
 #id {
     text-align: center;
     color: red;
    }
   
-  /* Class selector */
  
 .btn {
     width: 80px;
@@ -31,7 +30,7 @@
     border-radius: 8px;   
     }
   
-  /* Universel selector */
+
 * {
     background-color: lightblue;
     font-family: 'Times New Roman';
@@ -40,9 +39,10 @@
     color: black;
   }
   
-  /*Element selector */
+
 h4, p {
-    background-color: gold;
+    background-color: lightgreen;
+    color: black;
     border: 1px solid gray;
      }
   
@@ -57,7 +57,7 @@ div {
     width: 300px;
     border: 10px solid green;
     position: center;
-    padding: 30px;
+    padding: 20px;
     margin: 2px;
     display: inline-block;
   }

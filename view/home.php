@@ -20,10 +20,10 @@
       <td><input type="submit" name="submit" value="Login" ></td>
     </tr>
     <tr>
-      <td><a href="http://localhost/springwt/view/admin_reg.php" class="link">Click for the AdminRegistration </a></td>
+      <td><a href="http://localhost/springwt/view/admin_reg.php" class="link">Click for the Admin Registration </a></td>
     </tr>
     <tr> 
-      <td><a href="http://localhost/springwt/view/user_reg.php" class="link">Click for the AdminRegistration </a></td>
+      <td><a href="http://localhost/springwt/view/user_reg.php" class="link">Click for the User Registration </a></td>
     </tr>
    </table>
   </form>
