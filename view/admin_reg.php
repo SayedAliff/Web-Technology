@@ -1,3 +1,9 @@
+
+<?php
+include '../control/action.php';
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +16,7 @@
     <hr>     
     <h2> Admin Registration </h2>
 
-    <form action="action.php" method="post" onsubmit="return validate()">
+    <form  method="post" onsubmit="return validate()">
         <table align="center">
 
             <tr>
@@ -20,8 +26,8 @@
             <tr>
                 <td>Full Name: </td>
                 <td>
-                    <input type="text" id="fname" name="Full Name ">
-                    <span id="error" style="color:red;"></span>
+                <input type="text" id="fname" name="fullname">
+                <span id="fname-error" style="color:red;"><?php echo $fnameError; ?></span>
                 </td>
             </tr>
 
@@ -29,7 +35,7 @@
                 <td>Date of birth: </td> 
                 <td>
                     <input type="date" id="dob" name="birthday">
-                    <span id="dob-error" style="color:red;"></span>
+                    <span id="dob-error" style="color:red;"><?php echo $birthError; ?></span>
                 </td>
             </tr>
 
@@ -40,7 +46,7 @@
                     <input type="radio" name="gender" value="female">Female
                     <input type="radio" name="gender" value="Other">Other
                     <br>
-                    <span id="gender-error" style="color:red;"></span>
+                    <span id="gender-error" style="color:red;"><?php echo $genderError; ?></span>
                 </td>
             </tr>
 
@@ -48,6 +54,7 @@
                 <td> Phone Number: </td>
                 <td> 
                     <input type="tel" id="phone" name="phone" placeholder="+880-1* **** **** "> 
+                    <span style="color:red;"><?php echo $phoneError; ?></span>
                 </td>
             </tr>
 
@@ -55,6 +62,7 @@
                 <td>Address: </td> 
                 <td>
                     <input type="text" id="address" name="address">
+                    <span style="color:red;"><?php echo $addressError; ?></span>
                 </td>
             </tr>
 
@@ -63,6 +71,7 @@
                 <td> 
                     <input type="email" id="email" name="email">
                     <span id="email-error" style="color:red;"></span>
+                    <span style="color:red;"><?php echo $emailError; ?></span>
                 </td>
             </tr>    
 

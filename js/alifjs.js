@@ -1,7 +1,7 @@
 
 function validateName() {
     let fname = document.getElementById("fname").value;
-    if (fname === "" || fname.length < 3) {
+    if (fname == "" || fname.length < 3) {
         document.getElementById("error").innerHTML = "Please enter a valid name (min 3 characters)";
         return false;
     }
@@ -24,11 +24,6 @@ function validateGender() {
     }
     return true;
 }
-
-
-
-
-
 let genderRadios = document.querySelectorAll('input[name="gender"]');
 genderRadios.forEach(function (radio) {
     radio.addEventListener("change", function () {
@@ -43,7 +38,7 @@ genderRadios.forEach(function (radio) {
 
 function validateEmail() {
     let email = document.getElementById("email").value;
-    if (email === "") {
+    if (email == "") {
         document.getElementById("email-error").innerHTML = "Email is required.";
         return false;
     }
@@ -79,7 +74,7 @@ document.getElementById("image").addEventListener("change", function () {
 
 function validateDOB() {
     let dob = document.getElementById("dob").value;
-    if (dob === "") {
+    if (dob == "") {
         document.getElementById("dob-error").innerHTML = "Date of birth is required.";
         return false;
     }
