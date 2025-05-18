@@ -1,3 +1,6 @@
+<?php
+include '../control/admin_login_control.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +11,7 @@
 <body>
       <h1> E-Pharmacy </h1>
       <hr>
-  <form> 
+      <form method="POST" >
   <table align="center">
     <tr>
       <td>Username:</td> 

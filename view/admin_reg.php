@@ -16,8 +16,23 @@ include '../control/action.php';
     <hr>     
     <h2> Admin Registration </h2>
 
-    <form  method="post" onsubmit="return validate()">
+    <form  method="post" onsubmit="return validate()" enctype="multipart/form-data">
         <table align="center">
+        <tr>
+             <td>Username:</td>
+             <td>
+              <input type="text" name="username" id="username">
+              <span style="color:red;"><?php echo $usernameError; ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type="password" name="password" id="password">
+                <span style="color:red;"><?php echo $passwordError; ?></span>
+            </td>
+        </tr>
 
             <tr>
                 <td><h4> Personal Informations </h4></td>
@@ -90,21 +105,21 @@ include '../control/action.php';
             <tr>
                 <td>Degree: </td>
                 <td> 
-                    <input type="text" name="degree ">
+                    <input type="text" name="degree">
                 </td>
             </tr>
 
             <tr>
                 <td>Institute: </td>
                 <td> 
-                    <input type="text" name="institute ">
+                    <input type="text" name="institute">
                 </td>
             </tr>
 
             <tr>
                 <td>Passing year: </td>
                 <td> 
-                    <input type="text" name="year ">
+                    <input type="text" name="passing_year">
                 </td>  
             </tr>
 
@@ -114,10 +129,10 @@ include '../control/action.php';
 
             <tr>
                 <td>
-                    <input type="checkbox" name="check1" value="Inventory Management">Inventory
-                    <input type="checkbox" name="check2" value="Customer Service">Customer Support
-                    <input type="checkbox" name="check3" value="Regulatory Compliance">Compliance
-                    <input type="checkbox" name="check4" value="E-Commerce.">E-Com 
+                    <input type="checkbox" name="skills[]" value="Inventory Management">Inventory
+                    <input type="checkbox" name="skills[]" value="Customer Service">Customer Support
+                    <input type="checkbox" name="skills[]" value="Regulatory Compliance">Compliance
+                    <input type="checkbox" name="skills[]" value="E-Commerce.">E-Com 
                 </td>
             </tr>
 
