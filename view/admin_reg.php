@@ -1,3 +1,9 @@
+
+<?php
+include '../control/action.php';
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +16,23 @@
     <hr>     
     <h2> Admin Registration </h2>
 
-    <form action="action.php" method="post" onsubmit="return validate()">
+    <form  method="post" onsubmit="return validate()" enctype="multipart/form-data">
         <table align="center">
+        <tr>
+             <td>Username:</td>
+             <td>
+              <input type="text" name="username" id="username">
+              <span style="color:red;"><?php echo $usernameError; ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type="password" name="password" id="password">
+                <span style="color:red;"><?php echo $passwordError; ?></span>
+            </td>
+        </tr>
 
             <tr>
                 <td><h4> Personal Informations </h4></td>
@@ -20,8 +41,8 @@
             <tr>
                 <td>Full Name: </td>
                 <td>
-                    <input type="text" id="fname" name="Full Name ">
-                    <span id="error" style="color:red;"></span>
+                <input type="text" id="fname" name="fullname">
+                <span id="fname-error" style="color:red;"><?php echo $fnameError; ?></span>
                 </td>
             </tr>
 
@@ -29,7 +50,7 @@
                 <td>Date of birth: </td> 
                 <td>
                     <input type="date" id="dob" name="birthday">
-                    <span id="dob-error" style="color:red;"></span>
+                    <span id="dob-error" style="color:red;"><?php echo $birthError; ?></span>
                 </td>
             </tr>
 
@@ -40,7 +61,7 @@
                     <input type="radio" name="gender" value="female">Female
                     <input type="radio" name="gender" value="Other">Other
                     <br>
-                    <span id="gender-error" style="color:red;"></span>
+                    <span id="gender-error" style="color:red;"><?php echo $genderError; ?></span>
                 </td>
             </tr>
 
@@ -48,6 +69,7 @@
                 <td> Phone Number: </td>
                 <td> 
                     <input type="tel" id="phone" name="phone" placeholder="+880-1* **** **** "> 
+                    <span style="color:red;"><?php echo $phoneError; ?></span>
                 </td>
             </tr>
 
@@ -55,6 +77,7 @@
                 <td>Address: </td> 
                 <td>
                     <input type="text" id="address" name="address">
+                    <span style="color:red;"><?php echo $addressError; ?></span>
                 </td>
             </tr>
 
@@ -63,6 +86,7 @@
                 <td> 
                     <input type="email" id="email" name="email">
                     <span id="email-error" style="color:red;"></span>
+                    <span style="color:red;"><?php echo $emailError; ?></span>
                 </td>
             </tr>    
 
@@ -81,21 +105,21 @@
             <tr>
                 <td>Degree: </td>
                 <td> 
-                    <input type="text" name="degree ">
+                    <input type="text" name="degree">
                 </td>
             </tr>
 
             <tr>
                 <td>Institute: </td>
                 <td> 
-                    <input type="text" name="institute ">
+                    <input type="text" name="institute">
                 </td>
             </tr>
 
             <tr>
                 <td>Passing year: </td>
                 <td> 
-                    <input type="text" name="year ">
+                    <input type="text" name="passing_year">
                 </td>  
             </tr>
 
@@ -105,10 +129,10 @@
 
             <tr>
                 <td>
-                    <input type="checkbox" name="check1" value="Inventory Management">Inventory
-                    <input type="checkbox" name="check2" value="Customer Service">Customer Support
-                    <input type="checkbox" name="check3" value="Regulatory Compliance">Compliance
-                    <input type="checkbox" name="check4" value="E-Commerce.">E-Com 
+                    <input type="checkbox" name="skills[]" value="Inventory Management">Inventory
+                    <input type="checkbox" name="skills[]" value="Customer Service">Customer Support
+                    <input type="checkbox" name="skills[]" value="Regulatory Compliance">Compliance
+                    <input type="checkbox" name="skills[]" value="E-Commerce.">E-Com 
                 </td>
             </tr>
 
