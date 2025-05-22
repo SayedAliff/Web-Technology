@@ -1,30 +1,26 @@
-
 function validateName() {
-    let fname = document.getElementById("fname").value;
+    let fname = document.getElementById("Afullname").value;
     if (fname == "" || fname.length < 3) {
-        document.getElementById("error").innerHTML = "Please enter a valid name (min 3 characters)";
+        document.getElementById("fname-error").innerHTML = "Please enter a valid name (min 3 characters)";
         return false;
     }
     return true;
 }
-document.getElementById("fname").addEventListener("input", function () {
-    document.getElementById("error").innerHTML = "";
+document.getElementById("Afullname").addEventListener("input", function () {
+    document.getElementById("fname-error").innerHTML = "";
 });
 
 
 
-
-
-
 function validateGender() {
-    let gender = document.querySelector('input[name="gender"]:checked');
+    let gender = document.querySelector('input[name="Agender"]:checked');
     if (!gender) {
         document.getElementById("gender-error").innerHTML = "Please select a gender.";
         return false;
     }
     return true;
 }
-let genderRadios = document.querySelectorAll('input[name="gender"]');
+let genderRadios = document.querySelectorAll('input[name="Agender"]');
 genderRadios.forEach(function (radio) {
     radio.addEventListener("change", function () {
         document.getElementById("gender-error").innerHTML = "";
@@ -33,28 +29,22 @@ genderRadios.forEach(function (radio) {
 
 
 
-
-
-
 function validateEmail() {
-    let email = document.getElementById("email").value;
+    let email = document.getElementById("Aemail").value;
     if (email == "") {
         document.getElementById("email-error").innerHTML = "Email is required.";
         return false;
     }
     return true;
 }
-document.getElementById("email").addEventListener("input", function () {
+document.getElementById("Aemail").addEventListener("input", function () {
     document.getElementById("email-error").innerHTML = "";
 });
 
 
 
-
-
-
 function validateImage() {
-    let imageInput = document.getElementById("image");
+    let imageInput = document.getElementById("Aimages");
     let errorSpan = document.getElementById("image-error");
 
     if (imageInput.files.length === 0) {
@@ -63,28 +53,23 @@ function validateImage() {
     }
     return true;
 }
-document.getElementById("image").addEventListener("change", function () {
+document.getElementById("Aimages").addEventListener("change", function () {
     document.getElementById("image-error").innerHTML = "";
 });
 
 
 
-
-
-
 function validateDOB() {
-    let dob = document.getElementById("dob").value;
+    let dob = document.getElementById("Abirthday").value;
     if (dob == "") {
         document.getElementById("dob-error").innerHTML = "Date of birth is required.";
         return false;
     }
     return true;
 }
-document.getElementById("dob").addEventListener("input", function () {
+document.getElementById("Abirthday").addEventListener("input", function () {
     document.getElementById("dob-error").innerHTML = "";
 });
-
-
 
 
 

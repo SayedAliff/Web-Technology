@@ -1,84 +1,83 @@
 <?php
 include "../model/admindb.php";
 
-$fnameError = $birthError = $genderError = $phoneError = $addressError = $emailError = $usernameError = $passwordError = $imageError = "";
+$AfullnameError = $AbirthError = $AgenderError = $AphoneError = $AaddressError = $AemailError = $AusernameError = $ApasswordError = $AimageError = "";
 $hasError = 0;
-$imageName = "";
+$AimageName = "";
 
 if (isset($_REQUEST['submit'])) {
 
-    if (empty($_REQUEST["fullname"])) {
-        $fnameError = "Full Name is required";
+    if (empty($_REQUEST["Afullname"])) {
+        $AfullnameError = "Full Name is required";
         $hasError = 1;
     }
 
-    if (empty($_REQUEST["birthday"])) {
-        $birthError = "Date of Birth is required";
+    if (empty($_REQUEST["Abirthday"])) {
+        $AbirthError = "Date of Birth is required";
         $hasError = 1;
     }
 
-    if (empty($_REQUEST["gender"])) {
-        $genderError = "Select your gender";
+    if (empty($_REQUEST["Agender"])) {
+        $AgenderError = "Select your gender";
         $hasError = 1;
     }
 
-    if (empty($_REQUEST["phone"])) {
-        $phoneError = "Phone is required";
+    if (empty($_REQUEST["Aphone"])) {
+        $AphoneError = "Phone is required";
         $hasError = 1;
     }
 
-    if (empty($_REQUEST["address"])) {
-        $addressError = "Address is required";
+    if (empty($_REQUEST["Aaddress"])) {
+        $AaddressError = "Address is required";
         $hasError = 1;
     }
 
-    if (empty($_REQUEST["email"])) {
-        $emailError = "Email is required";
+    if (empty($_REQUEST["Aemail"])) {
+        $AemailError = "Email is required";
         $hasError = 1;
     }
 
-    if (empty($_REQUEST["username"])) {
-        $usernameError = "Username is required";
+    if (empty($_REQUEST["Ausername"])) {
+        $AusernameError = "Username is required";
         $hasError = 1;
     }
 
-    if (empty($_REQUEST["password"])) {
-        $passwordError = "Password is required";
+    if (empty($_REQUEST["Apassword"])) {
+        $ApasswordError = "Password is required";
         $hasError = 1;
     }
 
-    if (!isset($_FILES["images"]) || $_FILES["images"]["error"] != 0) {
-        $imageError = "Invalid image file";
+    if (!isset($_FILES["Aimages"]) || $_FILES["Aimages"]["error"] != 0) {
+        $AimageError = "Invalid image file";
         $hasError = 1;
     } else {
-        $imageName = basename($_FILES["images"]["name"]);
+        $AimageName = basename($_FILES["Aimages"]["name"]);
     }
 
     if ($hasError == 0) {
         $conn = createCon();
         if (insertData(
             $conn,
-            $_REQUEST["fullname"],
-            $_REQUEST["birthday"],
-            $_REQUEST["gender"],
-            $_REQUEST["phone"],
-            $_REQUEST["address"],
-            $_REQUEST["email"],
-            $_REQUEST["username"],
-            $_REQUEST["password"],
-            $_REQUEST["degree"],
-            $_REQUEST["institute"],
-            $_REQUEST["passing_year"],
-            $imageName
+            $_REQUEST["Afullname"],
+            $_REQUEST["Abirthday"],
+            $_REQUEST["Agender"],
+            $_REQUEST["Aphone"],
+            $_REQUEST["Aaddress"],
+            $_REQUEST["Aemail"],
+            $_REQUEST["Ausername"],
+            $_REQUEST["Apassword"],
+            $_REQUEST["Adegree"],
+            $_REQUEST["Ainstitute"],
+            $_REQUEST["Apassing_year"],
+            $AimageName
         )) {
-            
             $uploadDir = $_SERVER['DOCUMENT_ROOT'] . "/springwt/uploads/";
             if (!file_exists($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
 
-            $targetFile = $uploadDir . $imageName;
-            if (move_uploaded_file($_FILES["images"]["tmp_name"], $targetFile)) {
+            $targetFile = $uploadDir . $AimageName;
+            if (move_uploaded_file($_FILES["Aimages"]["tmp_name"], $targetFile)) {
                 header("Location: ../view/home.php");
                 exit();
             }

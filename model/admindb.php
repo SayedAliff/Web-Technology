@@ -4,30 +4,25 @@ function createCon(){
     return mysqli_connect ("localhost", "root", "", "Epharmacy");
 }
 
-function insertData($conn,$fullname, $birthday, $gender, $phone, $address, $email, $username, $password, $degree, $institute, $passing_year, $imageName){
+function insertData($conn, $Afullname, $Abirthday, $Agender, $Aphone, $Aaddress, $Aemail, $Ausername, $Apassword, $Adegree, $Ainstitute, $Apassing_year, $AimageName){
    
-    $sql = "INSERT INTO admins(Afullname, Abirthday, Agender, Aphone, address, email, username,	password, degree, institute, passing_year, imageName) 
-    VALUES ('$fullname', '$birthday', '$gender', '$phone', '$address', '$email', '$username', '$password', '$degree', '$institute', '$passing_year','$imageName')";
-    if (mysqli_query($conn, $sql))
-    {
+    $sql = "INSERT INTO admins (Afullname, Abirthday, Agender, Aphone, Aaddress, Aemail, Ausername, Apassword, Adegree, Ainstitute, Apassing_year, AimageName) 
+    VALUES ('$Afullname', '$Abirthday', '$Agender', '$Aphone', '$Aaddress', '$Aemail', '$Ausername', '$Apassword', '$Adegree', '$Ainstitute', '$Apassing_year','$AimageName')";
+    
+    if (mysqli_query($conn, $sql)) {
         return true;
-    } 
-    else
-    {
+    } else {
         return false;
     }
 }
 
-function checkLogin($conn, $username, $password) {
-    $sql = "SELECT * FROM admin WHERE username = '$username' AND password = '$password'";
+function checkLogin($conn, $Ausername, $Apassword) {
+    $sql = "SELECT * FROM admins WHERE Ausername = '$Ausername' AND Apassword = '$Apassword'";
     $result = mysqli_query($conn, $sql);
     return $result;
 }
 
-
 function closeCon($conn){
     mysqli_close($conn);
 }
-
-
-
+?>

@@ -29,7 +29,7 @@ include '../control/admin_action.php';
         <tr>
             <td>Password:</td>
             <td>
-                <input type="password" name="Apassword" id="password">
+                <input type="password" name="Apassword" id="Apassword">
                 <span style="color:red;"><?php echo $passwordError; ?></span>
             </td>
         </tr>
@@ -41,7 +41,7 @@ include '../control/admin_action.php';
             <tr>
                 <td>Full Name: </td>
                 <td>
-                <input type="text" id="fname" name="Afullname">
+                <input type="text" id="Afname" name="Afullname">
                 <span id="fname-error" style="color:red;"><?php echo $fnameError; ?></span>
                 </td>
             </tr>
@@ -49,7 +49,7 @@ include '../control/admin_action.php';
             <tr>
                 <td>Date of birth: </td> 
                 <td>
-                    <input type="date" id="dob" name="Abirthday">
+                    <input type="date" id="Adob" name="Abirthday">
                     <span id="dob-error" style="color:red;"><?php echo $birthError; ?></span>
                 </td>
             </tr>
