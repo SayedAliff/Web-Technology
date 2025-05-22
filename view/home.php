@@ -5,7 +5,7 @@ include '../control/admin_login_control.php';
 <html>
 <head>
     <title>E-Pharmacy</title>
-    <link rel="stylesheet" type="text/css" href="../css/alif-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin-style.css">
     <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
 </head>
 <body>
@@ -15,10 +15,10 @@ include '../control/admin_login_control.php';
   <table align="center">
     <tr>
       <td>Username:</td> 
-      <td><input type="text" name="username"></td>
+      <td><input type="text" name="Ausername"></td>
     <tr>
       <td>Password: </td> 
-      <td><input type="password" name="password"></td>
+      <td><input type="password" name="Apassword"></td>
     <tr>
       <td><input type="submit" name="submit" value="Login" ></td>
     </tr>
