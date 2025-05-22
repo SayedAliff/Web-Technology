@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>E-Pharmacy admin reg</title>
-    <link rel="stylesheet" type="text/css" href="../css/alif-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin-style.css">
     <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
 </head>
 <body>

@@ -1,6 +1,6 @@
 
 <?php
-include '../control/action.php';
+include '../control/admin_action.php';
 ?>
 
 
@@ -8,7 +8,7 @@ include '../control/action.php';
 <html>
 <head>
     <title>E-Pharmacy admin reg</title>
-    <link rel="stylesheet" type="text/css" href="../css/alif-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin-style.css">
     <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
 </head>
 <body>
@@ -21,7 +21,7 @@ include '../control/action.php';
         <tr>
              <td>Username:</td>
              <td>
-              <input type="text" name="username" id="username">
+              <input type="text" name="Ausername" id="Ausername">
               <span style="color:red;"><?php echo $usernameError; ?></span>
             </td>
         </tr>
@@ -29,7 +29,7 @@ include '../control/action.php';
         <tr>
             <td>Password:</td>
             <td>
-                <input type="password" name="password" id="password">
+                <input type="password" name="Apassword" id="password">
                 <span style="color:red;"><?php echo $passwordError; ?></span>
             </td>
         </tr>
@@ -41,7 +41,7 @@ include '../control/action.php';
             <tr>
                 <td>Full Name: </td>
                 <td>
-                <input type="text" id="fname" name="fullname">
+                <input type="text" id="fname" name="Afullname">
                 <span id="fname-error" style="color:red;"><?php echo $fnameError; ?></span>
                 </td>
             </tr>
@@ -49,7 +49,7 @@ include '../control/action.php';
             <tr>
                 <td>Date of birth: </td> 
                 <td>
-                    <input type="date" id="dob" name="birthday">
+                    <input type="date" id="dob" name="Abirthday">
                     <span id="dob-error" style="color:red;"><?php echo $birthError; ?></span>
                 </td>
             </tr>
@@ -57,9 +57,9 @@ include '../control/action.php';
             <tr>
                 <td>Select a gender: </td> 
                 <td>
-                    <input type="radio" name="gender" value="male">Male
-                    <input type="radio" name="gender" value="female">Female
-                    <input type="radio" name="gender" value="Other">Other
+                    <input type="radio" name="Agender" value="male">Male
+                    <input type="radio" name="Agender" value="female">Female
+                    <input type="radio" name="Agender" value="Other">Other
                     <br>
                     <span id="gender-error" style="color:red;"><?php echo $genderError; ?></span>
                 </td>
@@ -68,7 +68,7 @@ include '../control/action.php';
             <tr>
                 <td> Phone Number: </td>
                 <td> 
-                    <input type="tel" id="phone" name="phone" placeholder="+880-1* **** **** "> 
+                    <input type="tel" id="phone" name="Aphone" placeholder="+880-1* **** **** "> 
                     <span style="color:red;"><?php echo $phoneError; ?></span>
                 </td>
             </tr>
@@ -76,7 +76,7 @@ include '../control/action.php';
             <tr>
                 <td>Address: </td> 
                 <td>
-                    <input type="text" id="address" name="address">
+                    <input type="text" id="address" name="Aaddress">
                     <span style="color:red;"><?php echo $addressError; ?></span>
                 </td>
             </tr>
@@ -84,7 +84,7 @@ include '../control/action.php';
             <tr>  
                 <td>Email Address: </td>
                 <td> 
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="Aemail">
                     <span id="email-error" style="color:red;"></span>
                     <span style="color:red;"><?php echo $emailError; ?></span>
                 </td>
@@ -93,7 +93,7 @@ include '../control/action.php';
             <tr>
                 <td> Upload Your Image: </td>
                 <td> 
-                    <input type="file" id="image" name="images">
+                    <input type="file" id="image" name="Aimages">
                     <span id="image-error" style="color:red;"></span>
                 </td>
             </tr>
@@ -105,21 +105,21 @@ include '../control/action.php';
             <tr>
                 <td>Degree: </td>
                 <td> 
-                    <input type="text" name="degree">
+                    <input type="text" name="Adegree">
                 </td>
             </tr>
 
             <tr>
                 <td>Institute: </td>
                 <td> 
-                    <input type="text" name="institute">
+                    <input type="text" name="Ainstitute">
                 </td>
             </tr>
 
             <tr>
                 <td>Passing year: </td>
                 <td> 
-                    <input type="text" name="passing_year">
+                    <input type="text" name="Apassing_year">
                 </td>  
             </tr>
 
@@ -149,6 +149,6 @@ include '../control/action.php';
 
         </table>
     </form>
-    <script src="../js/alifjs.js"></script>
+    <script src="../js/admin.js"></script>
 </body>
 </html>

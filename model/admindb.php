@@ -6,7 +6,7 @@ function createCon(){
 
 function insertData($conn,$fullname, $birthday, $gender, $phone, $address, $email, $username, $password, $degree, $institute, $passing_year, $imageName){
    
-    $sql = "INSERT INTO admin(fullname,	birthday, gender, phone, address, email, username,	password, degree, institute, passing_year, imageName) 
+    $sql = "INSERT INTO admins(Afullname, Abirthday, Agender, Aphone, address, email, username,	password, degree, institute, passing_year, imageName) 
     VALUES ('$fullname', '$birthday', '$gender', '$phone', '$address', '$email', '$username', '$password', '$degree', '$institute', '$passing_year','$imageName')";
     if (mysqli_query($conn, $sql))
     {
