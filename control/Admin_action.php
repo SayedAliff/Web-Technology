@@ -1,9 +1,9 @@
 <?php
 include "../model/admindb.php";
 
-$AfullnameError = $AbirthError = $AgenderError = $AphoneError = $AaddressError = $AemailError = $AusernameError = $ApasswordError = $AimageError = "";
+$AfullnameError = $AbirthError = $AgenderError = $AphoneError = $AaddressError = $AemailError = $AusernameError = $ApasswordError = $AfileError = "";
 $hasError = 0;
-$AimageName = "";
+$Afiles = "";
 
 if (isset($_REQUEST['submit'])) {
 
@@ -47,11 +47,11 @@ if (isset($_REQUEST['submit'])) {
         $hasError = 1;
     }
 
-    if (!isset($_FILES["Aimages"]) || $_FILES["Aimages"]["error"] != 0) {
-        $AimageError = "Invalid image file";
+    if (!isset($_FILES["Afiles"]) || $_FILES["Afiles"]["error"] != 0) {
+        $AfileError = "Invalid file";
         $hasError = 1;
     } else {
-        $AimageName = basename($_FILES["Aimages"]["name"]);
+        $Afiles = basename($_FILES["Afiles"]["name"]);
     }
 
     if ($hasError == 0) {
@@ -69,21 +69,23 @@ if (isset($_REQUEST['submit'])) {
             $_REQUEST["Adegree"],
             $_REQUEST["Ainstitute"],
             $_REQUEST["Apassing_year"],
-            $AimageName
+            $Afiles
         )) {
             $uploadDir = $_SERVER['DOCUMENT_ROOT'] . "/springwt/uploads/";
             if (!file_exists($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
 
-            $targetFile = $uploadDir . $AimageName;
-            if (move_uploaded_file($_FILES["Aimages"]["tmp_name"], $targetFile)) {
+            $targetFile = $uploadDir . $Afiles;
+            if (move_uploaded_file($_FILES["Afiles"]["tmp_name"], $targetFile)) {
                 header("Location: ../view/home.php");
                 exit();
+            } else {
+                echo "File upload failed.";
             }
 
         } else {
-            $message = mysqli_error($conn);
+            echo "Database insert failed: " . mysqli_error($conn);
         }
         closeCon($conn);
     }

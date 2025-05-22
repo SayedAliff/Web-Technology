@@ -10,8 +10,6 @@ document.getElementById("Afullname").addEventListener("input", function () {
     document.getElementById("fname-error").innerHTML = "";
 });
 
-
-
 function validateGender() {
     let gender = document.querySelector('input[name="Agender"]:checked');
     if (!gender) {
@@ -27,8 +25,6 @@ genderRadios.forEach(function (radio) {
     });
 });
 
-
-
 function validateEmail() {
     let email = document.getElementById("Aemail").value;
     if (email == "") {
@@ -41,10 +37,8 @@ document.getElementById("Aemail").addEventListener("input", function () {
     document.getElementById("email-error").innerHTML = "";
 });
 
-
-
 function validateImage() {
-    let imageInput = document.getElementById("Aimages");
+    let imageInput = document.getElementById("Afiles");
     let errorSpan = document.getElementById("image-error");
 
     if (imageInput.files.length === 0) {
@@ -53,11 +47,9 @@ function validateImage() {
     }
     return true;
 }
-document.getElementById("Aimages").addEventListener("change", function () {
+document.getElementById("Afiles").addEventListener("change", function () {
     document.getElementById("image-error").innerHTML = "";
 });
-
-
 
 function validateDOB() {
     let dob = document.getElementById("Abirthday").value;
@@ -70,8 +62,6 @@ function validateDOB() {
 document.getElementById("Abirthday").addEventListener("input", function () {
     document.getElementById("dob-error").innerHTML = "";
 });
-
-
 
 function validate() {
     if (

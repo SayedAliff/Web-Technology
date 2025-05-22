@@ -41,7 +41,7 @@ include '../control/admin_action.php';
             <tr>
                 <td>Full Name: </td>
                 <td>
-                <input type="text" id="Afname" name="Afullname">
+                <input type="text" id="Afullname" name="Afullname">
                 <span id="fname-error" style="color:red;"><?php echo $fnameError; ?></span>
                 </td>
             </tr>
@@ -49,7 +49,7 @@ include '../control/admin_action.php';
             <tr>
                 <td>Date of birth: </td> 
                 <td>
-                    <input type="date" id="Adob" name="Abirthday">
+                    <input type="date" id="Abirthday" name="Abirthday">
                     <span id="dob-error" style="color:red;"><?php echo $birthError; ?></span>
                 </td>
             </tr>
@@ -68,7 +68,7 @@ include '../control/admin_action.php';
             <tr>
                 <td> Phone Number: </td>
                 <td> 
-                    <input type="tel" id="phone" name="Aphone" placeholder="+880-1* **** **** "> 
+                    <input type="tel" id="Aphone" name="Aphone" placeholder="+880-1* **** **** "> 
                     <span style="color:red;"><?php echo $phoneError; ?></span>
                 </td>
             </tr>
@@ -76,7 +76,7 @@ include '../control/admin_action.php';
             <tr>
                 <td>Address: </td> 
                 <td>
-                    <input type="text" id="address" name="Aaddress">
+                    <input type="text" id="Aaddress" name="Aaddress">
                     <span style="color:red;"><?php echo $addressError; ?></span>
                 </td>
             </tr>
@@ -84,7 +84,7 @@ include '../control/admin_action.php';
             <tr>  
                 <td>Email Address: </td>
                 <td> 
-                    <input type="email" id="email" name="Aemail">
+                    <input type="email" id="Aemail" name="Aemail">
                     <span id="email-error" style="color:red;"></span>
                     <span style="color:red;"><?php echo $emailError; ?></span>
                 </td>
@@ -93,7 +93,7 @@ include '../control/admin_action.php';
             <tr>
                 <td> Upload Your Image: </td>
                 <td> 
-                    <input type="file" id="image" name="Aimages">
+                    <input type="file" id="Afiles" name="Afiles">
                     <span id="image-error" style="color:red;"></span>
                 </td>
             </tr>

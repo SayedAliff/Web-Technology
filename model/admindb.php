@@ -4,10 +4,10 @@ function createCon(){
     return mysqli_connect ("localhost", "root", "", "Epharmacy");
 }
 
-function insertData($conn, $Afullname, $Abirthday, $Agender, $Aphone, $Aaddress, $Aemail, $Ausername, $Apassword, $Adegree, $Ainstitute, $Apassing_year, $AimageName){
+function insertData($conn, $Afullname, $Abirthday, $Agender, $Aphone, $Aaddress, $Aemail, $Ausername, $Apassword, $Adegree, $Ainstitute, $Apassing_year, $Afiles){
    
-    $sql = "INSERT INTO admins (Afullname, Abirthday, Agender, Aphone, Aaddress, Aemail, Ausername, Apassword, Adegree, Ainstitute, Apassing_year, AimageName) 
-    VALUES ('$Afullname', '$Abirthday', '$Agender', '$Aphone', '$Aaddress', '$Aemail', '$Ausername', '$Apassword', '$Adegree', '$Ainstitute', '$Apassing_year','$AimageName')";
+    $sql = "INSERT INTO admins (Afullname, Abirthday, Agender, Aphone, Aaddress, Aemail, Ausername, Apassword, Adegree, Ainstitute, Apassing_year, Afiles) 
+    VALUES ('$Afullname', '$Abirthday', '$Agender', '$Aphone', '$Aaddress', '$Aemail', '$Ausername', '$Apassword', '$Adegree', '$Ainstitute', '$Apassing_year','$Afiles')";
     
     if (mysqli_query($conn, $sql)) {
         return true;
