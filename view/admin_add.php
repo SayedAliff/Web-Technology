@@ -1,22 +1,20 @@
-
 <?php
-include '../control/admin_reg_control.php';
+include '../control/admin_add_control.php';
 ?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>E-Pharmacy admin reg</title>
+    <title>E-Pharmacy Admin Registration</title>
     <link rel="stylesheet" type="text/css" href="../css/admin-style.css">
     <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
 </head>
 <body>
     <h1> E-Pharmacy </h1>
     <hr>     
-    <h2> Admin Registration </h2>
+    <h2> Add Admins </h2>
 
-    <form  method="post" onsubmit="return validate()" enctype="multipart/form-data">
+    <form  method="post" enctype="multipart/form-data">
         <table align="center">
         <tr>
              <td>Username:</td>
@@ -122,34 +120,27 @@ include '../control/admin_reg_control.php';
             </tr>
 
             <tr>
-                <td><h4>Skills</h4></td>
-            </tr>
-
-            <tr>
-                <td>
-                    <input type="checkbox" name="skills[]" value="Inventory Management">Inventory
-                    <input type="checkbox" name="skills[]" value="Customer Service">Customer Support
-                    <input type="checkbox" name="skills[]" value="Regulatory Compliance">Compliance
-                    <input type="checkbox" name="skills[]" value="E-Commerce.">E-Com 
-                </td>
-            </tr>
-
-            <tr>
                 <td>
                     <input type="reset" class="btn reset" value="Reset">
                     <input type="submit" class="btn submit" name="submit" value="Submit">
                 </td>
             </tr>
-           
+
             <tr>
-                <td><a href="http://localhost/springwt/view/home.php" class="link">Go to home page</a></td>
+                <td><a href="../view/admin_dashboard.php" class="link">Go to Dashboard</a></td>
             </tr>
 
+            <tr>
+                <td colspan="2" style="color:red;"><?php echo $errMsg; ?></td>
+            </tr>
         </table>
-         <footer style="text-align:center; color:#666;">
-              2025 E-Pharmacy. All rights reserved.
-            </footer>
     </form>
-    <script src="../js/admin.js"></script>
+    <br>
+    <img src="../image/actionpage.jpg" width="100%" height="100%">
+    <br>
+    <footer style="text-align:center; color:#666;">
+        2025 E-Pharmacy. All rights reserved.
+    </footer>
+    
 </body>
 </html>
