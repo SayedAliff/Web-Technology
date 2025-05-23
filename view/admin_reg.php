@@ -1,6 +1,6 @@
 
 <?php
-include '../control/admin_action.php';
+include '../control/admin_reg_control.php';
 ?>
 
 

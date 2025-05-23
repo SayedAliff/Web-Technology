@@ -22,6 +22,16 @@ function checkLogin($conn, $Ausername, $Apassword) {
     return $result;
 }
 
+function getAdminByUsername($conn, $Ausername) {
+    $sql = "SELECT * FROM admins WHERE Ausername = '$Ausername'";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        return mysqli_fetch_assoc($result);
+    } else {
+        return null;
+    }
+}
+
 function closeCon($conn){
     mysqli_close($conn);
 }

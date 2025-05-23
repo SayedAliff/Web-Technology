@@ -6,11 +6,16 @@
   
  
 .btn {
-    width: 80px;
-    margin: 8px;
-    padding: 10px;
-    border: 3px solid black; 
-    border-radius: 8px;}
+    width: 100px;
+    margin: 8px 5px;
+    padding: 12px 0;
+    border: 3px solid #222;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.09);
+    font-weight: bold;}
   
 .submit {
     background-color: green;
@@ -23,16 +28,22 @@
        } 
   
 .link {
-    padding: 1px;
-    background-color: lightskyblue;
-    color: blue;
-    margin: 5px;
-    border-radius: 8px;   
+    display: inline-block;
+    padding: 4px 15px;
+    background-color: #63c6ff;
+    color: #1a237e;
+    margin: 6px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+    border: 1px solid #2196f3;   
     }
   
 
 * {
-    background-color: rgb(208, 238, 242);
+    background-color:  #c2b4af ;
     font-family: 'Times New Roman';
     text-align: center;
     box-sizing: border-box;

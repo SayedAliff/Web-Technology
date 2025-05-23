@@ -1,5 +1,5 @@
 <?php
-include "../model/admindb.php";
+include "../model/admin_db.php";
 
 $AfullnameError = $AbirthError = $AgenderError = $AphoneError = $AaddressError = $AemailError = $AusernameError = $ApasswordError = $AfileError = "";
 $hasError = 0;
