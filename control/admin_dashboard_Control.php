@@ -3,7 +3,7 @@ include "../model/admin_db.php";
 session_start();
 
 if (!isset($_SESSION['admin'])) {
-    header("Location: ../view/home.php");
+    header("Location: ../view/admin_home.php");
     exit();
 }
 

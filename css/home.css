@@ -1,0 +1,23 @@
+body {
+    background: #1e2e4c; /* deep black-blue */
+    color: red;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.link {
+    display: inline-block;
+    background: #2356a2;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 10px;
+    margin: 18px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.14s;
+}
+.link:hover {
+    background: #18376c;
+}

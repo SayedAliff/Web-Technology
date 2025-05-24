@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['admin'])) {
-    header("Location: home.php");
+    header("Location: ../view/admin_home.php");
     exit();
 }
 include "../model/admin_db.php";
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             move_uploaded_file($_FILES["Afiles"]["tmp_name"], $targetFile);
         }
         closeCon($conn);
-        header("Location: admin_dashboard.php");
+        header("Location: ../view/admin_dashboard.php");
         exit();
     } else {
         $errMsg = "Registration not complete. Please try again.";

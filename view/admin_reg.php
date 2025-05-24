@@ -142,7 +142,7 @@ include '../control/admin_reg_control.php';
             </tr>
            
             <tr>
-                <td><a href="http://localhost/springwt/view/home.php" class="link">Go to home page</a></td>
+                <td><a href="http://localhost/springwt/view/admin_home.php" class="link">Go to home page</a></td>
             </tr>
 
         </table>

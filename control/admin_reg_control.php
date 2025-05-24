@@ -72,7 +72,7 @@ if (isset($_REQUEST['submit'])) {
                 $targetFile = $uploadDir . $Afiles;
                 move_uploaded_file($_FILES["Afiles"]["tmp_name"], $targetFile);
             }
-            header("Location: ../view/home.php");
+            header("Location: ../view/admin_home.php");
             exit();
         } else {
             echo "Registration not complete. Please try again.";
