@@ -7,7 +7,7 @@ if (!isset($_SESSION['admin'])) {
 include "../model/admin_db.php";
 
 $errMsg = "";
-// Error variables for demo (normally set from validation logic)
+
 $usernameError = $passwordError = $fnameError = $birthError = $genderError = $phoneError = $addressError = $emailError = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $Ainstitute = $_POST['Ainstitute'];
     $Apassing_year = $_POST['Apassing_year'];
 
-    // File optional
+
     $Afiles = "";
     if (isset($_FILES["Afiles"]) && $_FILES["Afiles"]["error"] == 0) {
         $Afiles = basename($_FILES["Afiles"]["name"]);
