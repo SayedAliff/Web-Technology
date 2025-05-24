@@ -29,7 +29,7 @@ include '../control/admin_login_control.php';
                 <td><a href="http://localhost/springwt/view/admin_reg.php" class="link">Click for Admin Registration </a></td>
               </tr>
             <tr>
-                <td><a href="http://localhost/springwt/view/home.php" class="link">Go to home page</a></td>
+                <td><a href="http://localhost/springwt/view/home.php" class="link">Back to home page</a></td>
             </tr>
         </table>
         <footer style="text-align:center; color:#666;">
