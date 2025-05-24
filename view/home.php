@@ -11,24 +11,29 @@ include '../control/admin_login_control.php';
 <body>
       <h1> E-Pharmacy </h1>
       <hr>
-      <form method="POST" >
-  <table align="center">
-    <tr>
-      <td>Username:</td> 
-      <td><input type="text" name="Ausername"></td>
-    <tr>
-      <td>Password: </td> 
-      <td><input type="password" name="Apassword"></td>
-    <tr>
-      <td><input type="submit" name="submit" value="Login" ></td>
-    </tr>
-    <tr>
-      <td><a href="http://localhost/springwt/view/admin_reg.php" class="link">Click for the Admin Registration </a></td>
-    </tr>
-    <tr> 
-      <td><a href="http://localhost/springwt/view/user_reg.php" class="link">Click for the User Registration </a></td>
-    </tr>
-   </table>
-  </form>
+      <form method="POST" id="loginForm" >
+        <table align="center">
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="Ausername"></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input type="password" name="Apassword"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="submit" value="Login"></td>
+            </tr>
+            <tr>
+              
+                <td><a href="http://localhost/springwt/view/admin_reg.php" class="link">Click for the Admin Registration </a></td>
+              </tr>
+          
+                <td><a href="http://localhost/springwt/view/user_reg.php" class="link">Click for the User Registration </a></td>
+              
+            </tr>
+        </table>
+      </form>
+      <script src="../js/admin.js"></script>
 </body>
 </html>
