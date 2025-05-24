@@ -20,10 +20,9 @@ $profilePic = !empty($Afile) ? "../uploads/" . htmlspecialchars($Afile) : "../im
         <img src="<?php echo $profilePic; ?>" alt="Profile Picture" width="100" height="100" style="vertical-align:middle; border-radius:70%; margin-right:20px;">
         <b><?php echo htmlspecialchars($Afullname); ?>,<br><br><?php echo htmlspecialchars($Ausername); ?>, Welcome to your Profile !!!!!</br>
     </div>
-    <br> <br> <br>
-    <a href="admin_add.php" class="btn submit">Add New Admin</a>
+    
     <br><br>
-    <h2>Admins List</h2>
+    <h1>Admins List</h1>
     <table id="showTable" border="1" cellpadding="5">
         <tr>
             <th>Full Name</th>
@@ -64,6 +63,9 @@ $profilePic = !empty($Afile) ? "../uploads/" . htmlspecialchars($Afile) : "../im
                 </td>
             </tr>
         <?php } ?>
+
+             <a href="../view/admin_add.php" class="btn submit">Add New Admin</a>
+             <br><br><br>
     </table>
 
     <br><br>
@@ -72,7 +74,7 @@ $profilePic = !empty($Afile) ? "../uploads/" . htmlspecialchars($Afile) : "../im
     <footer style="text-align:center; color:#666;">
         2025 E-Pharmacy. All rights reserved.
     </footer>
-    <br><br>
-    <h3><a href="http://localhost/springwt/view/home.php" class="link">Go to home page</a></h3>
+    <br>
+    <h3><a href="../control/admin_logout_control.php" class="btn reset"> logout </a></h3>
 </body>
 </html>

@@ -15,16 +15,19 @@
     cursor: pointer;
     transition: all 0.2s;
     box-shadow: 0 1px 5px rgba(0,0,0,0.09);
-    font-weight: bold;}
+    font-weight: bold;
+    color: black;    
+    }
   
 .submit {
     background-color: green;
-    color: white;
+    color: rgb(0, 0, 0);
         }
   
 .reset {
     background-color: red;
-    color: white;
+    color: rgb(0, 0, 0);
+    
        } 
   
 .link {
