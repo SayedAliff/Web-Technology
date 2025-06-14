@@ -2,7 +2,11 @@ function validateForm() {
     let fullName = document.getElementById("full_name").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
+<<<<<<< HEAD
     let username = document.getElementById("username").value;
+=======
+    let confirmPassword = document.getElementById("confirm_password").value;
+>>>>>>> e96a7fed9d763c0f382934df2261b770b813e710
     let phone = document.getElementById("phone").value;
     let address = document.getElementById("address").value;
     let dob = document.getElementById("dob").value;
@@ -30,11 +34,21 @@ function validateForm() {
         isValid = false;
     }
 
+<<<<<<< HEAD
     if (username == "") {
         document.getElementById("username_error").textContent = "username is required.";
         isValid = false;
     }
     
+=======
+    if (confirmPassword == "") {
+        document.getElementById("confirm_password_error").textContent = "Please confirm your password.";
+        isValid = false;
+    } else if (password != confirmPassword) {
+        document.getElementById("confirm_password_error").textContent = "Passwords do not match.";
+        isValid = false;
+    }
+>>>>>>> e96a7fed9d763c0f382934df2261b770b813e710
 
     if (phone == "") {
         document.getElementById("phone_error").textContent = "Phone number is required.";

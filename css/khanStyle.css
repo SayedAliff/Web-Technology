@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *everything {
     margin: 0;
     padding: 0;
@@ -102,3 +103,109 @@ h4, p {
     margin-left: 10px;
 }
 
+=======
+*everything {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+#main-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#F_Text{
+    text-align: end;
+    padding-top: 10px;
+}
+
+#I_Text{
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: start;
+}
+
+
+.button {
+    width: 120px;
+    margin: 10px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.file {
+    background: #007bff;
+    color: white;
+}
+
+.register {
+    background: #ff0000;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.link {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.link:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 2rem;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h4, p {
+    background: rgba(255, 165, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+>>>>>>> e96a7fed9d763c0f382934df2261b770b813e710

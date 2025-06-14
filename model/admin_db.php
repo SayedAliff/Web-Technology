@@ -1,7 +1,11 @@
 <?php
 
 function createCon(){
+<<<<<<< HEAD
     return mysqli_connect ("localhost", "root", "", "epharmacy");
+=======
+    return mysqli_connect ("localhost", "root", "", "Epharmacy");
+>>>>>>> e96a7fed9d763c0f382934df2261b770b813e710
 }
 
 function insertData($conn, $Afullname, $Abirthday, $Agender, $Aphone, $Aaddress, $Aemail, $Ausername, $Apassword, $Adegree, $Ainstitute, $Apassing_year, $Afiles){

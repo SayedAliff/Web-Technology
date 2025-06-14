@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 <?php
 include '../control/user_login_control.php';
 ?>
+=======
+>>>>>>> e96a7fed9d763c0f382934df2261b770b813e710
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +14,11 @@ include '../control/user_login_control.php';
 </head>
 <body>
       <h1> E-Pharmacy </h1>
+<<<<<<< HEAD
 
+=======
+      <hr>
+>>>>>>> e96a7fed9d763c0f382934df2261b770b813e710
       <form method="POST" id="loginForm" >
         <table align="center">
             <tr>
@@ -26,8 +33,14 @@ include '../control/user_login_control.php';
                 <td colspan="2"><input type="submit" name="submit" value="Login"></td>
             </tr>
             <tr>
+<<<<<<< HEAD
                 <td><a href="http://localhost/springwt/view/user_reg.php" class="link">Click for User Registration </a></td>
             </tr>
+=======
+              
+                <td><a href="http://localhost/springwt/view/user_reg.php" class="link">Click for User Registration </a></td>
+              </tr>
+>>>>>>> e96a7fed9d763c0f382934df2261b770b813e710
             <tr>
                 <td><a href="http://localhost/springwt/view/home.php" class="link">Go to home page</a></td>
             </tr>
