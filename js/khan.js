@@ -2,7 +2,7 @@ function validateForm() {
     let fullName = document.getElementById("full_name").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirm_password").value;
+    let username = document.getElementById("username").value;
     let phone = document.getElementById("phone").value;
     let address = document.getElementById("address").value;
     let dob = document.getElementById("dob").value;
@@ -30,13 +30,11 @@ function validateForm() {
         isValid = false;
     }
 
-    if (confirmPassword == "") {
-        document.getElementById("confirm_password_error").textContent = "Please confirm your password.";
-        isValid = false;
-    } else if (password != confirmPassword) {
-        document.getElementById("confirm_password_error").textContent = "Passwords do not match.";
+    if (username == "") {
+        document.getElementById("username_error").textContent = "username is required.";
         isValid = false;
     }
+    
 
     if (phone == "") {
         document.getElementById("phone_error").textContent = "Phone number is required.";

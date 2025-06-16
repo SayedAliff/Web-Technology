@@ -74,7 +74,9 @@ $profilePic = !empty($Afile) ? "../uploads/" . htmlspecialchars($Afile) : "../im
     <footer style="text-align:center; color:#666;">
         2025 E-Pharmacy. All rights reserved.
     </footer>
-    <br>
+    <br><br>
+    <h2><a href="http://localhost/springwt/view/admin_game.php" class="btn reset"> Game </a></h2>
+    <br><br>
     <h3><a href="../control/admin_logout_control.php" class="btn reset"> logout </a></h3>
 </body>
 </html>

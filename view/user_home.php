@@ -1,3 +1,6 @@
+<?php
+include '../control/user_login_control.php';
+?>
 
 <!DOCTYPE html>
 <html>
@@ -8,7 +11,7 @@
 </head>
 <body>
       <h1> E-Pharmacy </h1>
-      <hr>
+
       <form method="POST" id="loginForm" >
         <table align="center">
             <tr>
@@ -23,9 +26,8 @@
                 <td colspan="2"><input type="submit" name="submit" value="Login"></td>
             </tr>
             <tr>
-              
                 <td><a href="http://localhost/springwt/view/user_reg.php" class="link">Click for User Registration </a></td>
-              </tr>
+            </tr>
             <tr>
                 <td><a href="http://localhost/springwt/view/home.php" class="link">Go to home page</a></td>
             </tr>
